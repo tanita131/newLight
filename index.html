@@ -4,109 +4,137 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <title>Awesome</title>
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+    <title>yourwebsite</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+        crossorigin="anonymous">
+
     <link rel="stylesheet" href="css/styles.css">
     <link href="https://fonts.googleapis.com/css?family=Artifika|Open+Sans:400,600,700|Sacramento" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Dancing+Script:400,700" rel="stylesheet">
-    <script src="https://use.fontawesome.com/92f5dabdc3.js"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
 </head>
 
 <body data-spy="scroll" data-target="#fm-nav">
     <header>
-        <nav class="navbar navbar-custom navbar-fixed-top">
-            <div class="container">
-                <!--Header Menu -->
-                <div class="navbar-header">
-                    <a href="#" class="navbar-brand">The Salon</a>
-                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#btn-colapsar">
-                        <span class="sr-only">Navegacion</span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
-                </div>
-                <!-- Menu Elements-->
-                <div class="collapse navbar-collapse" id="btn-colapsar">
-                    <ul class="nav navbar-nav">
-                        <li><a href="about.html">About</a></li>
-                         <li><a href="services.html">Services</a></li>
-                        <!--<li>
-                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                                Products <span class="caret"></span>
-                            </a>
-                            <ul class="dropdown-menu">
-                                <li><a href="#">Computadoras</a></li>
-                                <li><a href="#">Laptops</a></li>
-                                <li><a href="#">Cellphones</a></li>
-                                <li><a href="#">Drones</a></li>
-                                <li><a href="#">Accesorios</a></li>
-                            </ul>
-                        </li>-->
-                        <li><a href="contact.html">Contact</a></li>
-                    </ul>
-                </div>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="#">Your Logo</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02"
+                aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">Gallery<span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="services.html">Menu</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                </ul>
             </div>
         </nav>
     </header>
-    <main>
-        <div class="container-fluid">
-            <div class="row">
-                <div class="contenedor_tarjeta col-xs-3 col-lg-3">
-                    <a href="#">
-                        <figure>
-                            <img src="img/baner1.jpeg" class="frontal img-fluid" alt="">
-                            <figcaption class="trasera">
-                                <!--<h2 class="titulo">About Us</h2>
-                                <hr>-->
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam, ducimus.</p>
-                            </figcaption>
-                        </figure>
-                    </a>
+    <main class="container-fluid">
+        <div id="carouselExampleControls" class="carousel slide padre d-flex justify-content-center align-items-center" data-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active food">
+                    <img class="d-block w-100" src="img/food1.jpg" alt="First slide">
+                    <div class="carousel-caption">
+                        <h5><i class="fas fa-utensils"></i>Company Name</h5>
+                        <p>Lorem ipsum dolor sit amet.</p>
+                    </div>
                 </div>
-                <div class="contenedor_tarjeta col-xs-3 col-lg-3">
-                    <a href="#">
-                        <figure>
-                            <img src="img/baner2.jpeg" class="frontal img-fluid" alt="">
-                            <figcaption class="trasera">
-                                <!--<h2 class="titulo">Products</h2>
-                                <hr>-->
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam, ducimus.</p>
-                            </figcaption>
-                        </figure>
-                    </a>
+                <div class="carousel-item food">
+                    <img class="d-block w-100" src="img/food2.jpg" alt="...">
+                    <div class="carousel-caption">
+                        <h5><i class="fas fa-utensils"></i>Company Name</h5>
+                        <p>Lorem ipsum dolor sit amet.</p>
+                    </div>
                 </div>
-                <div class="contenedor_tarjeta col-xs-3 col-lg-3">
-                    <a href="#">
-                        <figure>
-                            <img src="img/baner3.jpeg" class="frontal img-fluid" alt="">
-                            <figcaption class="trasera">
-                                <!--<h2 class="titulo">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel, quia.</h2>
-                                <hr>-->
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam, ducimus.</p>
-                            </figcaption>
-                        </figure>
-                    </a>
+                <div class="carousel-item food">
+                    <img class="d-block w-100" src="img/food3.jpg" alt="Third slide">
+                    <div class="carousel-caption">
+                        <h5><i class="fas fa-utensils"></i>Company Name</h5>
+                        <p>Lorem ipsum dolor sit amet.</p>
+                    </div>
                 </div>
-                <div class="contenedor_tarjeta col-xs-3 col-lg-3">
-                    <a href="#">
-                        <figure>
-                            <img src="img/baner4.jpeg" class="frontal img-fluid" alt="">
-                            <figcaption class="trasera">
-                                <!--<h2 class="titulo">Contact Us</h2>
-                                <hr>-->
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam, ducimus.</p>
-                            </figcaption>
-                        </figure>
-                    </a>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+            <div class="hijo d-flex flex-row">
+                <div class="algo">
+                    <img class="img-fluid" src="img/food.jpg" alt="First slide">
+                </div>
+                <div class="algo1">
+                    <h2>About Company Title.</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime, placeat.</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus magni, temporibus sint nemo culpa laborum
+                        velit sed, esse ut eum.</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque totam quo rem nam sequi ducimus repudiandae
+                        officia, ea libero facere quam molestiae doloribus. Reprehenderit, deserunt cupiditate ullam. Incidunt
+                        reiciendis rerum corrupti obcaecati veniam eligendi fuga accusantium autem, necessitatibus aut eveniet
+                        sunt </p>
                 </div>
             </div>
         </div>
     </main>
-    <script src="js/jquery-3.2.1.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
+    <section class="mainMenu">
+        <div class="sectionIndex container row">
+            <div class="columna col-sm-6 col-md-4">
+                <a class="anchor" href="about.html">
+                <img class="img-fluid" src="img/galeria.jpg" alt="First slide">
+                <p class="navP">Gallery</p>
+            </a>
+            </div>
+            <div class="columna col-sm-6 col-md-4">
+                <a class="anchor" href="services.html">
+                <img class="img-fluid" src="img/menu.jpg" alt="First slide">
+                <p class="navP">Menu</p>
+            </a>
+            </div>
+            <div class="columna col-sm-12 col-md-4">
+                <a class="anchor" href="contact.html">
+                <img class="img-fluid" src="img/contact.jpg" alt="First slide">
+                <p class="navP">Contact</p>
+            </a>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="clipPath">
+            <div class="social-container row">
+                <!--Social Media -->
+                <div class="col-lg-12 redes-sociales justify-content-center" id="seccion3">
+                    <div class="col-auto">
+                        <a href="#" class="icono icon-twitter twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="icono icon-instagram instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="icono icon-facebook facebook"><i class="fab fa-facebook-f"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="clipPath1">
+            <p>&copy; Awesome Web Templates 2018</p>
+        </div>
+    </footer>
+
+
     <script src="js/scripts.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>

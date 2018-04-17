@@ -1,17 +1,24 @@
 footer {
-    background: #5d5b5b;
-}
-
-footer {
+    background: #43434e;
     text-align: center;
     padding: 30px 0;
+    margin-top: 0;
+    color: #fff;
 }
 
-footer .disclaimer {
-    font-size: $fontSizeOne;
-    font-weight: 700;
-    text-decoration: $textDeco;
+footer .clipPath {
+    background-color: #7a5230;
+    -webkit-clip-path: polygon(100% 0, 0 100%, 0 0);
+    clip-path: polygon(100% 0, 0 100%, 0 0);
+    width: 100%;
+    height: 200px;
+    text-align: left;
 }
+
+footer .clipPath1 p{
+    margin-bottom: 0;
+}
+
 
 /*----MEDIA QUERIES ---*/
 
@@ -19,5 +26,5 @@ footer .disclaimer {
     footer .disclaimer {
         font-size: 15px;
         font-weight: normal;
-    } 
-  }
+    }
+}

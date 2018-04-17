@@ -7,12 +7,10 @@
 }
 
 body {
-    background-color: #3D3737;
-    background: url('../img/b-2.png');
-	background-repeat: repeat;
-    font-family: $primaryFont;
-    font-size: 18px;
-    overflow: hidden;
+  background-color: #b6b6b6;
+  font-family: 'Roboto Condensed', sans-serif;
+  line-height: 1.5; 
+  background: url("../img/wall2.png");
 }
 
 .container-fluid {
@@ -20,6 +18,11 @@ body {
     padding-left: 0;
     margin-right: 0;
     margin-left: 0;
+}
+
+.container {
+    margin-left: 0;
+    margin-right: 0;
 }
 
 .row {

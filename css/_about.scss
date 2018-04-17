@@ -1,28 +1,36 @@
-.about-body {
-    background: #FBF8F8;
-    overflow: visible;
+.about-container {
+    width: 80%;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    margin-left: 9%;
 }
 
-.about-hero {
-    width: 100%;
-    height: 400px;
-    opacity: 0.5;
-    filter: grayscale(50%);
+.about-container .anchor img {
+    opacity: .7;
+    margin: 20px
 }
 
-.about-figure {
+.about-container .anchor img:hover {
+    opacity: 1;
+    -webkit-transition: all .3s ease;
+    transition: all .3s ease;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.fatherFigure {
     position: relative;
-    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.about-figure h2 {
-    font-size: 65px;
-    font-weight: 700;
-    color: #285f8f;
+main .aboutTitle {
     position: absolute;
-    top: 50%;
-    left: 12%;
-    transform: translate(-50%, -50%);
+    font-family: 'Dancing Script';
+    font-size: 120px;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    color: #fff;
 }
 
 h3 {
@@ -39,47 +47,21 @@ hr.style-two {
     background-image: linear-gradient(to right, rgba(255, 0, 0, 0.2), rgba(255, 0, 0, 0.95), rgba(255, 0, 0, 0.2));
 }
 
-footer {
-    margin-top: 50px;
-    color: #fff;
+@media screen and (max-width: 1199px) {}
+
+@media screen and (max-width: 991px) {}
+
+@media screen and (max-width: 767px) {
+    .about-container {
+        margin-left: 6%;
+    }
 }
 
-@include large {
-    .about-hero {
-        height: 350px;
+@media screen and (max-width: 575px) {
+    main .aboutTitle {
+        font-size: 60px;
     }
-}
-
-@include medium {
-    body {
-        font-size: 14px;
-    }
-    .about-hero {
-        height: 300px;
-    }
-    .about-figure h2 {
-        font-size: 55px;
-        font-weight: 700;
-        color: #285f8f;
-        position: absolute;
-        top: 50%;
-        left: 18%;
-        transform: translate(-50%, -50%);
-    }
-    h3 {
-    margin-top: 40px;
-    margin-bottom: 20px;
-}
-}
-
-@include extraSmall {
-      .about-figure h2 {
-        font-size: 40px;
-        font-weight: 700;
-        color: #285f8f;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
+    .about-container {
+        margin-left: 4%;
     }
 }
